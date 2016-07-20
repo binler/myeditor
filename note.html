@@ -1,0 +1,81 @@
+<script type="text/javascript">
+    'use strict';
+    // Function bind in OOP javascript.
+    // var foo = {
+    //   x : 3
+    // }
+    // var bar = function(){
+    //   console.log(this.x);
+    // }
+    // var barFunc = bar.bind(foo);
+    // barFunc();
+
+
+    // Thay đổi constructor của object với call().
+    // function product(name, price) {
+    //   this.name = name;
+    //   this.price = price;
+    //   if(price < 0){
+    //     throw RangeError('cannot create product' + this.name + 'with a negative price');
+    //
+    //   }
+    // }
+    //
+    // function food(name, price) {
+    //   product.call(this, name, price);
+    //   this.category = 'food';
+    //   this.desc = 'a good food';
+    // }
+    //
+    // var cheese = new food('feta', 5);
+    // console.log(cheese);
+
+
+    // tìm hiểu về Function.prototype.call.
+    // var champion = {
+    //     name: 'Jayce',
+    //     myname: function(name) {
+    //         var name = name || this.name;
+    //         console.log('My name is ' + name);
+    //     }
+    // }
+    //
+    // var champion1 = {
+    //   name : 'Yasuo',
+    // }
+    // champion.myname();
+    // champion.myname.call(champion1);
+    // champion.myname.apply(champion1);
+    // champion.myname.call(champion1,"shyvana");
+    // champion.myname.apply(champion1, ["Azir"]);
+
+    // Truyền ngữ cảnh thực thi cho hàm phản hồi
+    // function print() {
+    // console.log(this.mVal)
+    // }
+    //
+    // var obj = {
+    //     mVal: "I love Da nang",
+    //
+    //     mMethod: function(callback) {
+    //         // truyền đối tượng hiện tại cho hàm phản hồi callback
+    //         callback.call(this)
+    //     }
+    // }
+    // obj.mMethod(print)
+
+    //  Tìm hiểu bind trong javascript OOP.
+    // var pokemon = {
+    //     name : 'pikachu',
+    //     sayName : function(){
+    //       console.log(this.name);
+    //     }
+    // }
+    //
+    // var resayName = pokemon.sayName.bind(pokemon);
+    // resayName();
+    // pokemon.name = 'Arcerus';
+    // resayName();
+
+
+</script>
